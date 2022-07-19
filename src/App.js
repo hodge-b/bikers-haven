@@ -1,16 +1,10 @@
 import React, {useState} from 'react';
+import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import './styles/style.css';
 
 // import components
-import Header from './components/Header';
-import Hero from './components/Hero';
-import Newsletter from './components/Newsletter';
-import ProductPreview from './components/ProductPreview';
-import StandFor from './components/StandFor';
-import About from './components/About';
-import Contact from './components/Contact';
-import Footer from './components/Footer';
-
+import LandingPage from './pages/LandingPage';
+import ProductsPage from './pages/ProductsPage';
 
 export default function App(){
 
@@ -20,15 +14,11 @@ export default function App(){
     window.addEventListener('resize',()=> setWindowWidth(window.innerWidth));
 
     return(
-        <main>
-            <Header width={windowWidth} />
-            <Hero />
-            <Newsletter />
-            <ProductPreview />
-            <StandFor />
-            <About />
-            <Contact />
-            <Footer />
-        </main>
+        <Router>
+            <Routes>
+                <Route path='/' element={<LandingPage width={windowWidth} />} />
+                <Route path='/products' element={<ProductsPage />} />
+            </Routes>
+        </Router>
     )
 }

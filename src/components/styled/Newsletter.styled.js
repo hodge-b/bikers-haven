@@ -38,6 +38,7 @@ export const StyledNewsletter = styled.section`
         font-size: .8rem;
         background-color: ${themedColors.accent};
         color: ${themedColors.white};
+        text-transform: uppercase;
         border-radius: 5px;
         border:none;
         cursor: pointer;

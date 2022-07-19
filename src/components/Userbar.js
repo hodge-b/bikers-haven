@@ -1,7 +1,7 @@
 import React from 'react';
 import { StyledUserbar } from './styled/Userbar.styled';
 
-export default function Userbar({width}){
+export default function Userbar(){
 
     return(
         <StyledUserbar>

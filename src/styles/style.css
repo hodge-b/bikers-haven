@@ -17,3 +17,18 @@ a:link{
     text-decoration: none;
     color: black;
 }
+
+.hidden{
+    display: none;
+}
+
+.screen-overlay{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100vw;
+    height: 100vh;
+
+    background-color: rgba(0,0,0,.8);
+    z-index: 1;
+}

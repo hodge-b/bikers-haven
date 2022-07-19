@@ -12,7 +12,7 @@ export const StyledContact = styled.section`
     text-align: center;
 
     h2{
-        margin: ${styleUtility.margin.m2} 0;
+        margin: ${styleUtility.margin.m3} 0;
         text-transform: uppercase;
         font-size: ${styleUtility.fsize.md};
     }

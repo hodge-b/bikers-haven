@@ -12,7 +12,7 @@ export const StyledAbout = styled.section`
     background-position: center center;
     background-size: cover;
 
-    height: 80vh;
+    height: 90vh;
     padding: ${styleUtility.padding.p3};
     color: ${themedColors.white};
 
@@ -26,7 +26,7 @@ export const StyledAbout = styled.section`
         height: max-content;
     }
     h2{
-        margin-bottom: ${styleUtility.margin.m2};
+        margin: ${styleUtility.margin.m3} 0;
         font-size: ${styleUtility.fsize.md};
         text-transform: uppercase;
     }
