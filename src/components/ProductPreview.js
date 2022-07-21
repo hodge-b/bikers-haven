@@ -1,30 +1,10 @@
 import React,{useState} from 'react';
+import {bikeInfo} from '../bikes/bikeInfo';
 import { StyledProductPreview } from './styled/ProductPreview.styled';
-import bg_bike01 from '../images/Karate_Monkey_2022.jpeg';
-import bg_bike02 from '../images/Karate_Monkey_2015.jpeg';
-import bg_bike03 from '../images/Karate_Monkey_2016.jpeg';
-
 
 export default function ProductPreview(){
 
     const [itemPosition, setItemPosition] = useState(0);
-
-    // only temporary to hold data, this info will be stored seperately
-    const [bikeInfo] = useState([
-        {
-            imageURL: bg_bike01,
-            title: 'Surly Karate Monkey 2022'
-        },
-        {
-            imageURL: bg_bike02,
-            title: 'Surly Karate Monkey 2016'
-        },
-        {
-            imageURL: bg_bike03,
-            title: 'Surly Karate Monkey 2015'
-        }
-        
-    ])
 
 
     // click handler to change image on arrow click
@@ -48,7 +28,7 @@ export default function ProductPreview(){
 
     // this will be a product preview carousel
     return(
-        <StyledProductPreview bikeImage={bikeInfo[itemPosition].imageURL}>
+        <StyledProductPreview bikeImage={bikeInfo[itemPosition].image[0]}>
             <div className="preview-info-wrapper">
                 <h2>{bikeInfo[itemPosition].title}</h2>
                 <div className="preview-info-title-divider"></div>

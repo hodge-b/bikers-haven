@@ -1,6 +1,5 @@
 import React from 'react';
 
-import Header from '../components/Header';
 import Hero from '../components/Hero';
 import Newsletter from '../components/Newsletter';
 import ProductPreview from '../components/ProductPreview';
@@ -9,10 +8,9 @@ import About from '../components/About';
 import Contact from '../components/Contact';
 import Footer from '../components/Footer';
 
-export default function LandingPage({width}){
+export default function LandingPage(){
     return(
         <main>
-            <Header width={width} />
             <Hero />
             <Newsletter />
             <ProductPreview />

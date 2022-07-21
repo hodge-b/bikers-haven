@@ -1,10 +1,12 @@
 import React, {useState} from 'react';
-import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
+import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import './styles/style.css';
 
-// import components
+// import page components
+import Header from './components/Header';
 import LandingPage from './pages/LandingPage';
 import ProductsPage from './pages/ProductsPage';
+
 
 export default function App(){
 
@@ -15,10 +17,12 @@ export default function App(){
 
     return(
         <Router>
+            <Header width={windowWidth}/>
+
             <Routes>
-                <Route path='/' element={<LandingPage width={windowWidth} />} />
-                <Route path='/products' element={<ProductsPage />} />
-            </Routes>
+                <Route path='/' element={<LandingPage />} />
+                <Route path='/products'  element={<ProductsPage />} />
+            </Routes> 
         </Router>
     )
 }
