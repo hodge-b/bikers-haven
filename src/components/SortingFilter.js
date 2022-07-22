@@ -7,10 +7,10 @@ export default function SortingFilter(){
         <StyledSortingFilter>
             <div className="container">
                 <p>4 BIKES</p>
-                <div className="sort-filter-container">
+                {/* <div className="sort-filter-container">
                     <p>SORT </p>
                     <p>FILTER</p>
-                </div>
+                </div> */}
             </div>
         </StyledSortingFilter>
     )

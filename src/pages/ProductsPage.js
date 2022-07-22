@@ -21,7 +21,7 @@ export default function ProductsPage(){
 
     return(
         <StyledProductsPage id='products-section'>
-            <img src={img_trailbike} alt='Biker going on downhill trail' />
+            <img className='img-trail' src={img_trailbike} alt='Biker going on downhill trail' />
             <div className="content-wrapper">
                 <h2>Trail Bikes</h2>
                 <SortingFilter />

@@ -19,7 +19,8 @@ export const StyledProductCard = styled.div`
     }
     img{
         display: block;
-        margin: ${styleUtility.margin.m1} auto ${styleUtility.margin.m2};
+        margin: 0 auto;
+        object-fit: contain;
     }
     .card-information-wrapper > *{
         margin: ${styleUtility.margin.m1} 0;
