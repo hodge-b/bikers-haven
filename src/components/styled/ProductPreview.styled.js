@@ -42,6 +42,19 @@ export const StyledProductPreview = styled.section`
     .preview-wrapper--item-indicator > i{
         margin: 0 ${styleUtility.margin.m1};
     }
+    .btn--view-bike{
+        padding: ${styleUtility.padding.p2};
+        margin: ${styleUtility.margin.m3} 0; 
+
+        font-size: ${styleUtility.fsize.sm};
+        color: ${themedColors.white};
+        text-transform: uppercase;
+
+        background-color: ${themedColors.accent};
+        border-radius: 5px;
+        border: none;
+        cursor: pointer;
+    }
     .i--arrow{
         font-size: ${styleUtility.fsize.lg};
         cursor: pointer;

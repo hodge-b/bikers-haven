@@ -61,7 +61,7 @@ export default function ProductPreview(){
                 <i className='arrow-left ri-arrow-left-s-line i--arrow' onClick={clickHandler}></i>
                 <i className='arrow-right ri-arrow-right-s-line i--arrow' onClick={clickHandler}></i>
             </div>
-            <button className='btn--view-bike' onClick={clickHandler}>View</button>
+            {/* <button className='btn--view-bike' onClick={clickHandler}>View Bike</button> */}
             <div className="preview-wrapper--item-indicator">
                 <i className={itemPosition === 0 ? 'ri-checkbox-blank-circle-fill i--indicator' : 'ri-checkbox-blank-circle-line i--indicator'}></i>
                 <i className={itemPosition === 1 ? 'ri-checkbox-blank-circle-fill i--indicator' : 'ri-checkbox-blank-circle-line i--indicator'}></i>
