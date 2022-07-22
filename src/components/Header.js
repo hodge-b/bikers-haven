@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 // import components
 import Navbar from './Navbar';
@@ -44,13 +45,13 @@ export default function Header({width}){
                     <div className="screen-overlay hidden"></div>
                     <MenuModal onclick={menuClick} />
                     <p className='btn--menu' onClick={menuClick}>Menu</p>
-                    <a href="#"><h1>Biker's Haven</h1></a>
+                    <Link to='/'><h1>Biker's Haven</h1></Link>
                     <Userbar />
                 </>
                 :
                 // LARGER SCREENS
                 <>
-                    <a href="#"><h1>Biker's Haven</h1></a>
+                    <Link to='/'><h1>Biker's Haven</h1></Link>
                     <Navbar />
                     <Userbar />
                 </>
