@@ -26,7 +26,9 @@ export default function ProductsPage(){
                 <h2>Trail Bikes</h2>
                 <SortingFilter />
             </div>
-            {productCardElements}
+            <div className="card-wrapper">
+                {productCardElements}
+            </div>
         </StyledProductsPage>
     )
 }

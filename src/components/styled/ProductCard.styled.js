@@ -47,4 +47,12 @@ export const StyledProductCard = styled.div`
     .black{
         background-color: ${themedColors.black};
     }
+
+    @media only screen and (min-width: ${styleUtility.break.lg}){
+        .card{
+            width: 85%;
+            padding: ${styleUtility.padding.p1};
+            margin: ${styleUtility.margin.m1} 0;
+        }
+    }
 `

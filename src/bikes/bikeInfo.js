@@ -13,8 +13,8 @@ export const bikeInfo = [{
         img_krampus_black
     ],
     colors: ['white','black'],
-    title: '2022 Krampus',
-    price: '$1,250.00 CAD',
+    title: 'Krampus',
+    price: '$1,250.00',
     inventory: '12'
 },
 {
@@ -23,8 +23,8 @@ export const bikeInfo = [{
         img_wednesday_green
     ],
     colors: ['white','black'],
-    title: '2022 Wednesday Fat Bike',
-    price: '$2,450.00 CAD',
+    title: 'Wednesday Fat Bike',
+    price: '$2,450.00',
     inventory: '6'
 },
 {
@@ -33,7 +33,7 @@ export const bikeInfo = [{
         img_karate_monkey_green
     ],
     colors: ['white','black'],
-    title: '2022 Karate Monkey',
+    title: 'Karate Monkey',
     price: '$3,450.00',
     inventory: '2'
 },
